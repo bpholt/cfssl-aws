@@ -1,5 +1,5 @@
 # cfssl-aws
-This container, which extends [@jcjones’ CFSSL container](https://github.com/jcjones/docker-cfssl) will fetch a CA certificate and key from S3, along with a config file for [CFSSL](https://github.com/cloudflare/cfssl). The S3 objects to retrieve are set using environment variables:
+This container, which extends [@jcjones’ CFSSL container](https://github.com/jcjones/docker-cfssl), will fetch a CA certificate and key from S3, along with a config file for [CFSSL](https://github.com/cloudflare/cfssl). The S3 objects to retrieve are set using environment variables:
 
 <dl>
   <dt><code>CFSSL_CONFIG</code></dt><dd>Path to CFSSL config file (here’s <a href="https://github.com/cloudflare/cfssl/blob/master/doc/api.txt#L445-L478">an example</a>… hopefully the documentation will improve.)</dd>
